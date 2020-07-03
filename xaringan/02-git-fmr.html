@@ -30,15 +30,261 @@ MEP lab 1&lt;sup&gt;st&lt;/sup&gt; getaway
 2020-07-04]&lt;/b&gt;
 
 ---
-class: center, middle
 # Version control: what and why
 
---
 
-&lt;img src="figs/my_mess.png" width="50%" align="center"/&gt;
+.pull-left[
+&lt;img src="figs/my_mess.png" width="80%" align="center"/&gt;
+]
+.pull-right[
+&lt;img src="figs/drive.png" align="center"/&gt;
+]
+
+---
+
+# Version control: what and why
+
+.pull-left[
+&lt;img src="figs/02-version-control-individual.svg" width="80%" align="center"/&gt;
+]
+.pull-right[
+&lt;img src="figs/03-version-control-collab.svg" width="80%" align="center"/&gt;
+]
+
+---
+# Version control: what and why
+
+
+&lt;center&gt;&lt;img src="http://bit.ly/momtocat" width="60%"/&gt;&lt;/center&gt;
+
+---
+class: inverse, center, middle
+# Setting up Git
+
+---
+
+#Introductions
+
+
+&lt;center&gt;&lt;img src="https://media.giphy.com/media/8YyZVHQ7VgEftPbdaC/giphy.gif"/&gt;&lt;/center&gt;
 
 
 ---
+
+# Introductions
+
+## We need to tell Git:
+
+--
+
+### Our names
+
+--
+
+### Our emails
+
+--
+
+### Our preferred text editor
+
+--
+
+
+
+```bash
+git config --global user.name "First Last";
+
+git config --global user.email "first.last@provider.com";
+
+git config --global core.editor "nano-w"
+```
+
+---
+class: inverse, center, middle
+
+# Git locally
+---
+
+# Using Git locally
+ 
+--
+
+## Create a folder
+
+--
+
+## *Init*ialize a repository
+
+--
+
+## Ask Git what's up
+
+--
+
+```bash
+mkdir to-do
+
+git init;
+
+git status
+```
+
+---
+# Tracking files
+
+--
+
+## Create a file in our *repo*sitory
+
+--
+
+## Add this file to Git's watchlist
+
+--
+
+## Ask Git what's up
+
+--
+
+
+
+```bash
+echo "potato chips" &gt; shopping_list.txt;
+
+git add shopping_list.txt;
+
+git status
+```
+
+---
+&lt;!-- ![](https://media.giphy.com/media/26uf43dkw9ByWsjLi/giphy.gif) --&gt;
+---
+
+# Tracking files
+
+## *Commit* the file so Git start tracking it
+
+--
+
+## Ask Git what's up
+
+--
+
+
+```bash
+git commit -m "included essential item to shopping_list.txt"
+```
+
+---
+# The whole process
+
+&lt;center&gt;&lt;img src="https://media.giphy.com/media/WnCsa0t3luupW/giphy.gif" width = 350/&gt;&lt;/center&gt;
+
+---
+# Restoring a specific version
+
+&lt;center&gt;&lt;img src="https://media.giphy.com/media/xsF1FSDbjguis/giphy.gif"/&gt;&lt;/center&gt;
+
+---
+# Restoring a specific version
+
+## Modify `shopping_list` and track it
+
+--
+
+## Use git log to see more information about what has changed 
+
+--
+
+## Use git checkout to recover a previous version of your file
+
+--
+
+
+```bash
+echo "nuggets" &gt;&gt; shopping_list.txt;
+git add shopping_list.txt;
+commit shopping_list.txt -m "added nuggets to shopping_list.txt"
+git log;
+git checkout HEAD~1 shopping_list.txt
+```
+
+---
+class: inverse, middle, center
+
+&lt;!-- #<i class="fab  fa-git-square "></i> + <i class="fab  fa-github "></i> --&gt;
+# Git remotely using GitHub
+
+---
+
+#<i class="fab  fa-git-square "></i> + <i class="fab  fa-github "></i> for new projects
+
+## Create a repository in GitHub
+
+--
+
+## *Clone* it
+
+--
+
+## Make some changes and track them
+
+--
+
+## *Push* them
+
+--
+
+
+```bash
+git clone
+```
+
+---
+
+#<i class="fab  fa-git-square "></i> + <i class="fab  fa-github "></i> for ongoing projects
+
+## *Clone* the repo
+
+--
+
+## Make some changes and track them
+
+--
+
+## *Push* them
+
+---
+class: middle, center
+# You are doing great!
+&lt;center&gt;&lt;img src="https://media.giphy.com/media/BLCHvwl9C5j1u/giphy.gif" width = 400/&gt;&lt;/center&gt;
+---
+
+#<i class="fab  fa-git-square "></i> + <i class="fab  fa-github "></i> for untracked projects project in your computer
+
+--
+
+## Create a repository in GitHub
+
+--
+
+## git add and git commit your files
+
+--
+
+## git push the newly tracked files
+
+--
+
+## Proceed working normally on the project
+
+---
+class: middle, center
+# A few examples…
+---
+class: inverse, middle, center
+
+# That was it! Thanks!
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

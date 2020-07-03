@@ -188,9 +188,6 @@ Now let's track some files:
 This is it! Now just rinse and repeat and Git will †rack your files for you.
 The `git status` are not necessary, we ran them to see how each step looks like.
 
-<!-- ![](https://media.giphy.com/media/hVap96xc5gergX5qDv/giphy.gif) -->
-<!-- ![](https://media.giphy.com/media/WnCsa0t3luupW/giphy.gif) -->
-
 ## Restoring a specific version
 
 Now that we have file tracking under our belt we can use Git to go back to a specific version of our tracked file.

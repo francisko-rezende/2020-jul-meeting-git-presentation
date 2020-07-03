@@ -42,22 +42,23 @@
   --header-h3-font-size: 1.75rem;
 
   /* Colors */
-  --text-color: #272822;
+  --text-color: #000000;
   --header-color: #447C1F;
   --background-color: #FFF5DA;
   --link-color: #447C1F;
   --text-bold-color: #447C1F;
   --code-highlight-color: rgba(255,255,0,0.5);
-  --inverse-text-color: #FFF5DA;
-  --inverse-background-color: #447C1F;
-  --inverse-header-color: #FFF5DA;
+  --inverse-text-color: #000000;
+  --inverse-background-color: #DB8018;
+  --inverse-header-color: #000000;
   --title-slide-background-color: #447C1F;
-  --title-slide-text-color: #FFF5DA;
+  --title-slide-text-color: #FFFFFF;
   --header-background-color: #447C1F;
   --header-background-text-color: #FFF5DA;
-  --base: #447C1F;
-  --white: #FFF5DA;
-  --black: #272822;
+  --primary: #447C1F;
+  --secondary: #DB8018;
+  --white: #FFFFFF;
+  --black: #000000;
 }
 
 html {
@@ -168,7 +169,7 @@ img, video, iframe {
   max-width: 100%;
 }
 blockquote {
-  border-left: solid 5px #447C1F80;
+  border-left: solid 5px #DB801880;
   padding-left: 1em;
 }
 .remark-slide table {
@@ -183,7 +184,7 @@ th, td {
   padding: 5px;
 }
 .remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) {
-  background: #D9E4D2;
+  background: #F7E5D0;
 }
 table.dataTable tbody {
   background-color: var(--background-color);
@@ -193,7 +194,7 @@ table.dataTable.display tbody tr.odd {
   background-color: var(--background-color);
 }
 table.dataTable.display tbody tr.even {
-  background-color: #D9E4D2;
+  background-color: #F7E5D0;
 }
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.5);
@@ -233,11 +234,17 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   }
 }
 
-.base {
-  color: var(--base);
+.primary {
+  color: var(--primary);
 }
-.bg-base {
-  background-color: var(--base);
+.bg-primary {
+  background-color: var(--primary);
+}
+.secondary {
+  color: var(--secondary);
+}
+.bg-secondary {
+  background-color: var(--secondary);
 }
 .white {
   color: var(--white);

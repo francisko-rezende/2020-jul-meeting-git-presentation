@@ -1,0 +1,43 @@
+---
+title: "Git + GitHub cheatsheet"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
++ `git config --global user.name "[firstname lastname]"`
+set a name that appears in commits
+
++ `git config --global user.email "[valid-email]"`
+set an email appears in commits
+
++ `git init`
+initialize an existing directory as a Git repository
+
++ `git status`
+show modified files in working directory, staged for your next commit
+
++ `git add [file]`
+add a file as it looks now to your next commit (stage)
+
++ `git commit -m "[descriptive message]"`
+commit your staged content as a new commit snapshot
+
++ `git checkout`
+revert to a given version of your tracked files. Can be used with `HEAD~n` or with identifiers (~7 first characters should do)
+
++ `git log`
+show all commits with their messages and identifiers
+
+
++ `git clone [url]`
+retrieve an entire repository from a hosted location via URL
+
++ `git pull`
+fetch and merge any commits from the tracking remote repo
+
++ `git push`
+Upload commits
+
