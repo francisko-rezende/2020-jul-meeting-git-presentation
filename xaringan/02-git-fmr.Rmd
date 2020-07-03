@@ -1,0 +1,68 @@
+---
+title: "Gitting your &#128169;  under control"
+subtitle: "Molecular Ecology and Phylogenetics’ lab 1st getaway"  
+author: 
+  - "Francisko de Moraes Rezende"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    seal: false
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(icon)
+library(ggplot2)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+# style_duo_accent(
+#   primary_color = "#447C1F",
+#   secondary_color = "#DB8018",
+#   background_color = "#FFEDE6",
+#   # inverse_header_color = "#FFFFFF",
+#   header_font_google = google_font("Josefin Sans"),
+#   text_font_google   = google_font("Montserrat", "300", "300i"),
+#   code_font_google   = google_font("Fira Mono")
+# )
+
+style_mono_accent(
+  base_color = "#447C1F",
+  white_color = "#FFF5DA",
+  
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_google   = google_font("Fira Mono")
+)
+```
+class: title-slide, left, middle
+background-image: url(figs/ben-williams-Q1ntCz0HfKI-unsplash.jpg)
+background-size: cover
+
+# Gitting your &#128169;  under control
+
+## `r icon::fa("git-square")` + `r icon::fa("github")`
+
+<b>.large[Francisko de Moraes Rezende
+
+MEP lab 1<sup>st</sup> getaway 
+
+2020-07-04]</b>
+
+---
+class: center, middle
+# Version control: what and why
+
+--
+
+<img src="figs/my_mess.png" width="50%" align="center"/>
+
+
+---

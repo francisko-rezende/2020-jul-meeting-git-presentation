@@ -1,0 +1,31 @@
+---
+title: "Notes on git"
+author: "Francisko de Moraes Rezende"
+date: "6/30/2020"
+output: pdf_document
+---
+
+# What is version control and why should I use it?
+
+# How do I get set up to use Git?
+
++ Name;
++ Username; 
++ Text editor.
+
+# Where does Git store information/What is a repository?
+
+# Git locally
+
++ `git init`
++ `git add`
++ `git commit`
+
+# Git remotely using Github
+
+# Glossary
+
++ Version control is a tool for managing changes to a set of files. Within this framework, changes are called *commits*;
++ 
++ Version control systems start with a base with a base version of the document and then record changes you make each step of the way.
++ A few examples are
